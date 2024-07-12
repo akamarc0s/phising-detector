@@ -52,12 +52,12 @@ Models for Effective Phishing Email Detection](https://arxiv.org/pdf/2402.18093)
 - [SecureNet: A Comparative Study of DeBERTa and
 Large Language Models for Phishing Detection](https://arxiv.org/pdf/2406.06663)
 ## Imagens
-- Cálculos métricas
-  ![Imagem](https://github.com/akamarc0s/phising-detector/blob/main/metricas.png)
-- Matriz de confusão
-  ![Imagem](https://github.com/akamarc0s/phising-detector/blob/main/matriz_confusao.png)
-- Gráficos gerados
-  ![Imagem](https://github.com/akamarc0s/phising-detector/blob/main/distri_tipo_msg.png)
-  ![Imagem](https://github.com/akamarc0s/phising-detector/blob/main/hist_dist_pont_phishing.png)
-  ![Imagem](https://github.com/akamarc0s/phising-detector/blob/main/nuvem_palavras.png)
+- Cálculos métricas:
+![Imagem](https://github.com/akamarc0s/phising-detector/blob/main/metricas.png)
+- Matriz de confusão:
+![Imagem](https://github.com/akamarc0s/phising-detector/blob/main/matriz_confusao.png)
+- Gráficos gerados:
+![Imagem](https://github.com/akamarc0s/phising-detector/blob/main/distri_tipo_msg.png)
+![Imagem](https://github.com/akamarc0s/phising-detector/blob/main/hist_dist_pont_phishing.png)
+![Imagem](https://github.com/akamarc0s/phising-detector/blob/main/nuvem_palavras.png)
 
