@@ -44,9 +44,13 @@ Passos necessários para se recriar o projeto:
 
 ## Referências
 Olhar doc de links úteis
-Colab bootcamp
-Gráficos/matriz de confusão
-Artigos
+[Colab bootcamp](https://colab.research.google.com/drive/1kxThsa3xEng6bupj4mOaW2PMlq1UNSKI?authuser=1)
+[Gráficos/matriz de confusão](https://medium.com/data-hackers/entendendo-o-que-%C3%A9-matriz-de-confus%C3%A3o-com-python-114e683ec509)
+Artigos:
+- [ChatSpamDetector: Leveraging Large Language
+Models for Effective Phishing Email Detection](https://arxiv.org/pdf/2402.18093)
+- [SecureNet: A Comparative Study of DeBERTa and
+Large Language Models for Phishing Detection](https://arxiv.org/pdf/2406.06663)
 ## Imagens
 - Cálculos métricas
 - Matriz de confusão
