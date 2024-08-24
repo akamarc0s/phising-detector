@@ -13,10 +13,12 @@ Para se chegar ao resultado final do projeto, seguimos os seguintes passos:
 2. Estudo de notebooks Python relacionados a engenharia de prompt;
 3. Busca por datasets;
 4. Manipulação dos datasets;
-5. Conexão com a API do Gemini;
-6. Construção do prompt que passado para API;
-7. Execução do código e análise prévia do desempenho das chamadas à API;
-8. Análise de resultados.
+5. Randomização das entradas;
+6. Conexão com a API do Gemini;
+7. Construção do prompt usado com a API;
+8. Execução do código e análise prévia do desempenho das chamadas à API;
+9. Análise de resultados;
+10. Gráficos.
 
 ## Instalação
 Passos necessários para se recriar o projeto:
@@ -27,20 +29,28 @@ Passos necessários para se recriar o projeto:
 5. Caso coloque os datasets no Drive, conceda acesso a ele para o Google Colab durante a execução do notebook. Nós fizemos dessa maneira.
 
 ## Execução
-1. Importação de bibliotecas
-2. Conexão com Gemini API
-3. Montando dataset
-4. Prompt do modelo
-5. Execução do modelo
-6. Tratamento de resultados
-7. Análise de resultados
+
+Esses são os passos necessários para se reproduzir os resultados, a partir dos notebooks presente na pasta X:
+
+1. Importação de bibliotecas;
+2. Conexão com Gemini API;
+3. Montar/importar dataset;
+4. Prompt do modelo;
+5. Execução do modelo;
+6. Tratamento de resultados;
+7. Análise de resultados;
+8. Criação dos gráficos.
+
+   
 ## Bugs/problemas conhecidos
 - Limitações da versão da IA
 - Quantidade de amostras
 - Tratamento e análise de possíveis erros
+
+  
 ## Autores 
-- André Luís de Sousa Oliveira
-- Marcos Antônio de Santana Júnior
+- André Luís de Sousa Oliveira [(Contato)](https://www.linkedin.com/in/marcos-asj/)
+- Marcos Antônio de Santana Júnior [(Contato)](https://www.linkedin.com/in/andre-luis-a05409211/)
 
 ## Referências
 Olhar doc de links úteis
@@ -61,10 +71,18 @@ Large Language Models for Phishing Detection](https://arxiv.org/pdf/2406.06663)
 ![Imagem](https://github.com/akamarc0s/phising-detector/blob/main/matriz_confusao.png)
 
 - Gráficos gerados:
-  
+
+> Distribuição de tipos:
+> 
+Buscamos adicionar diferentes tipos de entradas para diversificar o dataset, visto que, a maioria dos datasets são somentes de E-mails. A classificação foi feita pelo modelo.
+
 ![Imagem](https://github.com/akamarc0s/phising-detector/blob/main/distri_tipo_msg.png)
 
+> Distruibição pontuação de phising por tipo:
+O Gemini nos retornou     
 ![Imagem](https://github.com/akamarc0s/phising-detector/blob/main/hist_dist_pont_phishing.png)
 
+> Nuvem de palavras:
+    
 ![Imagem](https://github.com/akamarc0s/phising-detector/blob/main/nuvem_palavras.png)
 
