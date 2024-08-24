@@ -1,4 +1,4 @@
-# phising-detector
+# phishing-detector
 ## Conceito do projeto
 Esse projeito foi desenvolvido com o intuíto de mostrar e analisar a capacidade da IA Generativa em classificar se um texto de diferentes tipos (Email,SMS, HTML,URL) é phishing ou não. Para isso foi utilizado a API do Gemini 1.5 Pro, onde ele foi instruído usando a técnica de engenharia de prompt Chain-of-Thought (CoT) para resolver o problema passo-a-passo.
 
@@ -8,7 +8,7 @@ O projeto foi implementado em linguagem Python para tratamento dos dados, chamad
   2. Huggingface: https://huggingface.co/datasets/ealvaradob/phishing-dataset
 
 ## Passo a passo
-Para se chegar ao resultado final do projeto, seguimos os seguintes passos:
+Para se construir o projeto como um todo, seguimos os seguintes passos:
 1. Estudo de artigos relacionados a classificação com o uso de IA Generativa;
 2. Estudo de notebooks Python relacionados a engenharia de prompt;
 3. Busca por datasets;
@@ -18,7 +18,6 @@ Para se chegar ao resultado final do projeto, seguimos os seguintes passos:
 7. Construção do prompt usado com a API;
 8. Execução do código e análise prévia do desempenho das chamadas à API;
 9. Análise de resultados;
-10. Gráficos.
 
 ## Instalação
 Passos necessários para se recriar o projeto:
@@ -41,6 +40,7 @@ Esses são os passos necessários para se reproduzir os resultados, a partir dos
 7. Análise de resultados;
 8. Criação dos gráficos.
 
+Cada célula do notebook possuí mais informações sobre o que foi feito em cada etapa.
    
 ## Bugs/problemas conhecidos
 - Limitações da versão da IA
@@ -53,36 +53,44 @@ Esses são os passos necessários para se reproduzir os resultados, a partir dos
 - Marcos Antônio de Santana Júnior [(Contato)](https://www.linkedin.com/in/andre-luis-a05409211/)
 
 ## Referências
-Olhar doc de links úteis
-[Colab bootcamp](https://colab.research.google.com/drive/1kxThsa3xEng6bupj4mOaW2PMlq1UNSKI?authuser=1)
 [Gráficos/matriz de confusão](https://medium.com/data-hackers/entendendo-o-que-%C3%A9-matriz-de-confus%C3%A3o-com-python-114e683ec509)
-Artigos:
-- [ChatSpamDetector: Leveraging Large Language
+
+[ChatSpamDetector: Leveraging Large Language
 Models for Effective Phishing Email Detection](https://arxiv.org/pdf/2402.18093)
-- [SecureNet: A Comparative Study of DeBERTa and
+
+[SecureNet: A Comparative Study of DeBERTa and
 Large Language Models for Phishing Detection](https://arxiv.org/pdf/2406.06663)
+
 ## Imagens
 - Cálculos métricas:
+  
+Essas métricas de avaliação nos ajuda a avaliar o desempenho do modelo. Tivemos **64% de acurácia de classificação**.
   
 ![Imagem](https://github.com/akamarc0s/phising-detector/blob/main/metricas.png)
 
 - Matriz de confusão:
-  
+
+A matriz de confusão nos ajuda a entender como está a distribuição do nosso resultado. Utilizamos essas informação para guiar na geração dos gráficos e analisar especificamente entradas.
+
 ![Imagem](https://github.com/akamarc0s/phising-detector/blob/main/matriz_confusao.png)
 
 - Gráficos gerados:
 
-> Distribuição de tipos:
-> 
+**Distribuição de tipos**
+
 Buscamos adicionar diferentes tipos de entradas para diversificar o dataset, visto que, a maioria dos datasets são somentes de E-mails. A classificação foi feita pelo modelo.
 
 ![Imagem](https://github.com/akamarc0s/phising-detector/blob/main/distri_tipo_msg.png)
 
-> Distruibição pontuação de phising por tipo:
-O Gemini nos retornou     
+**Distruibição de pontuação do phishing**
+
+Interessante observar que a API não nos retornou nenhuma resposta na faixa de 3-7, indicando que ele sempre busca indicar que suas escolhas são assertivas.
+
 ![Imagem](https://github.com/akamarc0s/phising-detector/blob/main/hist_dist_pont_phishing.png)
 
-> Nuvem de palavras:
-    
+**Nuvem de palavras**
+
+A nuvem de palavras nos ajuda a ter uma ideia de quais são osprincipais temas abordados nos textos presentes do dataset, palavras como "Enron" e "Dynergy" se referem a empresas do ramo de energia, outras palavras presentes na nuvem como "energy" e "power" nos ajuda a entender que há bastante palavras que se referem a utilização de energia. Lembrando, nosso dataset é randomizado, então, há diversos temos e a cardinalidade de temas/palavras é grande.
+
 ![Imagem](https://github.com/akamarc0s/phising-detector/blob/main/nuvem_palavras.png)
 
