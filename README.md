@@ -23,9 +23,11 @@ Para se construir o projeto como um todo, seguimos os seguintes passos:
 Passos necessários para se recriar o projeto:
 1. Clonar/abrir o python notebook via Google Colab;
 2. [Criação de chave de API Gemini](https://ai.google.dev/gemini-api/docs/api-key?hl=pt-br). Isso é necessário para gerar as respostas da IA;
-3. Instalação dos datasets que estão na pasta: PREENCHER AQUI!;
-4. Colocar datasets baixados na seção 'Montando o dataset' no notebook python (certifique-se de que colocou o caminho para o arquivo corretamente);
-5. Caso coloque os datasets no Drive, conceda acesso a ele para o Google Colab durante a execução do notebook. Nós fizemos dessa maneira.
+3. Instalação do dataset **dataset_final_250.csv** que está na pasta datasets;
+4. (Opcional) Caso queira recriar a partir dos datasets iniciais, baixe os datasets referenciados na sessão acima. Webs.json, urls.json e texts.json da fonte HuggingFace e emails.csv do Kaggle. 
+5. Caso coloque os dataset no Drive, conceda acesso a ele para o Google Colab durante a execução do notebook. Nós fizemos dessa maneira.
+
+
 
 ## Execução
 
@@ -39,6 +41,10 @@ Esses são os passos necessários para se reproduzir os resultados, a partir dos
 6. Tratamento de resultados;
 7. Análise de resultados;
 8. Criação dos gráficos.
+
+Há duas maneiras de se executar o projeto, mas todas seguem os passos de execução acima. No número 3 - *Montar/importar dataset* - é preciso decidir qual opção seguir:
+1. (Padrão) Seguir com o **dataset_final_250.csv** e executar passo-a-passo do dataset **exec_model.ipynb**;
+2. Criar sua própria entrada, utilizando o notebook **build_dataset.ipynb** e utilizar o resultado no notebook **exec_model.ipynb**. Na seção de instalação há os detalhes sobre o que precisa ser feito caso se opte por essa opção.
 
 Cada célula do notebook possuí mais informações sobre o que foi feito em cada etapa.
    
