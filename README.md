@@ -72,7 +72,7 @@ Large Language Models for Phishing Detection](https://arxiv.org/pdf/2406.06663)
   
 Essas métricas de avaliação nos ajuda a avaliar o desempenho do modelo. Tivemos **64% de acurácia de classificação**.
   
-![Imagem](https://github.com/akamarc0s/phising-detector/blob/main/metricas.png)
+![Imagem](https://github.com/akamarc0s/phising-detector/blob/main/images/metricas.png)
 
 - Matriz de confusão:
 
