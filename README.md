@@ -78,7 +78,7 @@ Essas métricas de avaliação nos ajuda a avaliar o desempenho do modelo. Tivem
 
 A matriz de confusão nos ajuda a entender como está a distribuição do nosso resultado. Utilizamos essas informação para guiar na geração dos gráficos e analisar especificamente entradas.
 
-![Imagem](https://github.com/akamarc0s/phising-detector/blob/main/matriz_confusao.png)
+![Imagem](https://github.com/akamarc0s/phising-detector/blob/main/images/matriz_confusao.png)
 
 - Gráficos gerados:
 
@@ -86,17 +86,17 @@ A matriz de confusão nos ajuda a entender como está a distribuição do nosso 
 
 Buscamos adicionar diferentes tipos de entradas para diversificar o dataset, visto que, a maioria dos datasets são somentes de E-mails. A classificação foi feita pelo modelo.
 
-![Imagem](https://github.com/akamarc0s/phising-detector/blob/main/distri_tipo_msg.png)
+![Imagem](https://github.com/akamarc0s/phising-detector/blob/main/images/distri_tipo_msg.png)
 
 **Distruibição de pontuação do phishing**
 
 Interessante observar que a API não nos retornou nenhuma resposta na faixa de 3-7, indicando que ele sempre busca indicar que suas escolhas são assertivas.
 
-![Imagem](https://github.com/akamarc0s/phising-detector/blob/main/hist_dist_pont_phishing.png)
+![Imagem](https://github.com/akamarc0s/phising-detector/blob/main/images/hist_dist_pont_phishing.png)
 
 **Nuvem de palavras**
 
 A nuvem de palavras nos ajuda a ter uma ideia de quais são osprincipais temas abordados nos textos presentes do dataset, palavras como "Enron" e "Dynergy" se referem a empresas do ramo de energia, outras palavras presentes na nuvem como "energy" e "power" nos ajuda a entender que há bastante palavras que se referem a utilização de energia. Lembrando, nosso dataset é randomizado, então, há diversos temos e a cardinalidade de temas/palavras é grande.
 
-![Imagem](https://github.com/akamarc0s/phising-detector/blob/main/nuvem_palavras.png)
+![Imagem](https://github.com/akamarc0s/phising-detector/blob/main/images/nuvem_palavras.png)
 
