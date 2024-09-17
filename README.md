@@ -1,6 +1,13 @@
 # phishing-detector
 ## Conceito do projeto
-Esse projeito foi desenvolvido com o intuíto de mostrar e analisar a capacidade da IA Generativa em classificar se um texto de diferentes tipos (Email,SMS, HTML,URL) é phishing ou não. Para isso foi utilizado a API do Gemini 1.5 Pro, onde ele foi instruído usando a técnica de engenharia de prompt Chain-of-Thought (CoT) para resolver o problema passo-a-passo.
+
+Phishing é uma técnica de ataque cibernético que busca enganar pessoas para que revelem informações sensíveis, como senhas, dados bancários ou números de cartões de crédito, através de comunicações fraudulentas que aparentam ser confiáveis. Esses ataques geralmente ocorrem via e-mails, mensagens de texto (SMS), sites falsos ou até por meio de URLs aparentemente legítimas, que direcionam as vítimas a páginas que coletam suas informações pessoais. O atacante se passa por uma entidade confiável, como um banco, uma loja online ou uma instituição governamental, para ganhar a confiança da vítima e convencê-la a fornecer esses dados.
+
+O phishing é considerado uma das formas mais comuns de cibercrime devido à sua simplicidade e à alta taxa de sucesso, afetando tanto indivíduos quanto empresas. Por isso, métodos avançados de detecção de phishing, como  processamento de linguagem natural (Natural Processing Language - NLP), como também o uso de IA generativa para classificar automaticamente comunicações suspeitas, são essenciais para prevenir esses ataques e proteger usuários e organizações.
+
+Este projeto foi desenvolvido com o objetivo de explorar e analisar o potencial da Inteligência Artificial Generativa na classificação de textos de diferentes tipos (Email, SMS, HTML, URL) como phishing ou não. A ferramenta utilizada para esse estudo foi a API do Gemini 1.5 Pro, que representa um dos avanços mais recentes em modelos de IA generativa. Para maximizar a precisão e a eficiência do modelo na tarefa de classificação, foi empregada a técnica de engenharia de prompt Chain-of-Thought (CoT), que permite ao modelo abordar o problema de forma sequencial, raciocinando passo a passo durante o processo de tomada de decisão. Essa abordagem não apenas melhora a compreensão da IA sobre o problema, mas também torna o processo de classificação mais transparente e explicável.
+
+A aplicação deste método fornece insights sobre como a IA pode ser usada em cenários de cibersegurança, especialmente na detecção de tentativas de phishing, que continuam a ser uma das ameaças mais prevalentes no ambiente digital.
 
 # Pré-requisitos e recursos utilizados
 O projeto foi implementado em linguagem Python para tratamento dos dados, chamada da API do Gemini e geração de gráficos. Tudo isso feito no ambiente de desenvolvimento do Google Colab,  as bibliotecas e módulos utilizadas estão presentes no código. Os dados foram extraidos das seguintes fontes:
