@@ -105,3 +105,9 @@ A nuvem de palavras nos ajuda a ter uma ideia de quais são osprincipais temas a
 
 ![Imagem](https://github.com/akamarc0s/phising-detector/blob/main/images/nuvem_palavras.png)
 
+**Análise Falso Positivos e Falsos Negativos**
+
+Ao analisar as mensagens classificadas como falsos negativos e falsos positivos, ficou evidente que o modelo apresenta dificuldades específicas em classificar corretamente textos que combinam linguagem natural com trechos de código, como HTML e JavaScript. Isso demonstra uma limitação do modelo em processar e interpretar de forma eficaz conteúdos que misturam estruturas de linguagem humana com sintaxes formais de programação, evidenciando um desafio ao lidar com a fusão de texto e código em uma única mensagem.
+
+![Imagem](https://github.com/akamarc0s/phising-detector/blob/main/images/nuvem_palavras_fp_fn.png)
+
